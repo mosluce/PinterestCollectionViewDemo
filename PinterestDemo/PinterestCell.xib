@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PinterestCell" customModule="PinterestDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="158" height="285"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="158" height="285"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-QE-vgW">
+                        <rect key="frame" x="0.0" y="0.0" width="158" height="187"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-vs-6QP">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="158"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xbI-vs-6QP" secondAttribute="height" id="Wlp-if-X5h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aW-MK-6dJ">
+                                <rect key="frame" x="8" y="162" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xbI-vs-6QP" firstAttribute="top" secondItem="UEW-QE-vgW" secondAttribute="top" id="4IC-Wr-p5l"/>
+                            <constraint firstItem="xbI-vs-6QP" firstAttribute="leading" secondItem="UEW-QE-vgW" secondAttribute="leading" id="Dht-Fk-CFe"/>
+                            <constraint firstAttribute="trailing" secondItem="3aW-MK-6dJ" secondAttribute="trailing" constant="8" id="LHG-t8-FWa"/>
+                            <constraint firstAttribute="trailing" secondItem="xbI-vs-6QP" secondAttribute="trailing" id="TSB-NU-o8e"/>
+                            <constraint firstItem="3aW-MK-6dJ" firstAttribute="leading" secondItem="UEW-QE-vgW" secondAttribute="leading" constant="8" id="XFs-fH-Rq6"/>
+                            <constraint firstItem="3aW-MK-6dJ" firstAttribute="top" secondItem="xbI-vs-6QP" secondAttribute="bottom" constant="4" id="apt-H2-kfc"/>
+                            <constraint firstAttribute="bottom" secondItem="3aW-MK-6dJ" secondAttribute="bottom" constant="4" id="xCT-CG-8L5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UEW-QE-vgW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2gI-pb-LWf"/>
+                <constraint firstItem="UEW-QE-vgW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ei3-jL-JYR"/>
+                <constraint firstAttribute="trailing" secondItem="UEW-QE-vgW" secondAttribute="trailing" id="QIr-yL-CTw"/>
+            </constraints>
+            <size key="customSize" width="158" height="285"/>
+            <connections>
+                <outlet property="containerView" destination="UEW-QE-vgW" id="iJb-qs-gWq"/>
+                <outlet property="imageView" destination="xbI-vs-6QP" id="eda-hN-OHg"/>
+                <outlet property="label" destination="3aW-MK-6dJ" id="DQa-ZS-ZoP"/>
+            </connections>
+            <point key="canvasLocation" x="-70" y="32"/>
+        </collectionViewCell>
+    </objects>
+</document>
